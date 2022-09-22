@@ -1,0 +1,42 @@
+body {
+    background: #e2f4fe;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    position: absolute;
+    top: 300px;
+    
+  }
+  
+  .sun {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(to top, #fb6753 0%,#fc8b53 50%,#fdd55a 100%);
+    border-radius: 50%;
+    animation: 10s rise infinite;
+  }
+  
+  .lines {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 50px;
+    background: #e2f4fe;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(-100px);
+      
+    }
+    50% {
+      transform: translateY(0);
+      
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+  }
